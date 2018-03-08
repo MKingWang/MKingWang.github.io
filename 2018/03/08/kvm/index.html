@@ -82,12 +82,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="MKing&#39;s Blog">
-<meta property="og:url" content="http://www.leixin.wang/archives/index.html">
+<meta name="description" content="KVM虚拟化之命令行管理虚拟机 vrish命令   命令 功能     virsh 进入KVM交互操作   virsh nodeinfo 查看物理机 信息   virsh list / virsh list –all 查看虚拟机列表   virsh dominfo 虚拟机名 查看指定虚拟机信息   virsh start 虚拟机名 开启指定虚拟机    virsh destroy 虚拟机名 强制关">
+<meta property="og:type" content="article">
+<meta property="og:title" content="kvm虚拟机常用命令">
+<meta property="og:url" content="http://www.leixin.wang/2018/03/08/kvm/index.html">
 <meta property="og:site_name" content="MKing&#39;s Blog">
+<meta property="og:description" content="KVM虚拟化之命令行管理虚拟机 vrish命令   命令 功能     virsh 进入KVM交互操作   virsh nodeinfo 查看物理机 信息   virsh list / virsh list –all 查看虚拟机列表   virsh dominfo 虚拟机名 查看指定虚拟机信息   virsh start 虚拟机名 开启指定虚拟机    virsh destroy 虚拟机名 强制关">
+<meta property="og:updated_time" content="2018-03-08T09:54:20.181Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MKing&#39;s Blog">
+<meta name="twitter:title" content="kvm虚拟机常用命令">
+<meta name="twitter:description" content="KVM虚拟化之命令行管理虚拟机 vrish命令   命令 功能     virsh 进入KVM交互操作   virsh nodeinfo 查看物理机 信息   virsh list / virsh list –all 查看虚拟机列表   virsh dominfo 虚拟机名 查看指定虚拟机信息   virsh start 虚拟机名 开启指定虚拟机    virsh destroy 虚拟机名 强制关">
 
 
 
@@ -117,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://www.leixin.wang/archives/"/>
+  <link rel="canonical" href="http://www.leixin.wang/2018/03/08/kvm/"/>
 
 
 
 
 
-  <title>归档 | MKing's Blog</title>
+  <title>kvm虚拟机常用命令 | MKing's Blog</title>
   
 
 
@@ -142,7 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -260,185 +264,301 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.leixin.wang/2018/03/08/kvm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MKing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MKing's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">kvm虚拟机常用命令</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-08T00:00:00+08:00">
+                2018-03-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/08/kvm/" itemprop="url">
+          
+
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">kvm虚拟机常用命令</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  974
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-08T00:00:00+08:00"
-              content="2018-03-08" >
-          03-08
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/07/mysql/" itemprop="url">
-              
-                <span itemprop="name">mysql学习笔记</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-07T00:00:00+08:00"
-              content="2018-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/07/svn/" itemprop="url">
-              
-                <span itemprop="name">版本控制软件之svn</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-07T00:00:00+08:00"
-              content="2018-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>KVM虚拟化之命令行管理虚拟机</p>
+<h3 id="vrish命令"><a href="#vrish命令" class="headerlink" title="vrish命令"></a>vrish命令</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>virsh</td>
+<td>进入KVM交互操作</td>
+</tr>
+<tr>
+<td>virsh nodeinfo</td>
+<td>查看物理机 信息</td>
+</tr>
+<tr>
+<td>virsh list / virsh list –all</td>
+<td>查看虚拟机列表</td>
+</tr>
+<tr>
+<td>virsh dominfo 虚拟机名</td>
+<td>查看指定虚拟机信息</td>
+</tr>
+<tr>
+<td>virsh start 虚拟机名</td>
+<td>开启指定虚拟机 </td>
+</tr>
+<tr>
+<td>virsh destroy 虚拟机名</td>
+<td>强制关闭虚拟机</td>
+</tr>
+<tr>
+<td>virsh shutdown 虚拟机名</td>
+<td>关机虚拟机</td>
+</tr>
+<tr>
+<td>virsh autostart 虚拟机名</td>
+<td>开机自启指定虚拟机</td>
+</tr>
+<tr>
+<td>virsh autostart –disable 虚拟机名</td>
+<td>取消指定虚拟机到开机自启</td>
+</tr>
+<tr>
+<td>virsh dumpxml 虚拟机名</td>
+<td>查看指定虚拟机的配置文件</td>
+</tr>
+<tr>
+<td>virsh define 配置文件</td>
+<td>从指定文件导入一台虚拟机</td>
+</tr>
+<tr>
+<td>virsh undefine 虚拟机名</td>
+<td>移除一台虚拟机，但不删除虚拟机的磁盘文件 </td>
+</tr>
+<tr>
+<td>virsh edit 虚拟名</td>
+<td>编辑一台虚拟机配置，在修改title和uuid的情况下重新生成新的虚拟机</td>
+</tr>
+</tbody>
+</table>
+<p><strong>UUID生成工具</strong><br><code>uuidgen</code></p>
+<h3 id="kvm虚拟机配置文件"><a href="#kvm虚拟机配置文件" class="headerlink" title="kvm虚拟机配置文件"></a>kvm虚拟机配置文件</h3><p><code>/etc/libvirt/qemu/虚拟机名.xml</code></p>
+<h3 id="调整虚拟机设置"><a href="#调整虚拟机设置" class="headerlink" title="调整虚拟机设置"></a>调整虚拟机设置</h3><ol>
+<li><p>导出虚拟机配置<br><code>virsh dumpxml 虚拟机名 &gt; /dirname/filename</code></p>
+</li>
+<li><p>修改导出后的配置<br><code>vim /dirname/filename</code></p>
+</li>
+<li><p>导入修改后的配置文件<br><code>virsh define /dirname/filename</code> </p>
+</li>
+</ol>
+<h4 id="改名虚拟机rh6-n1为rhel6-node1"><a href="#改名虚拟机rh6-n1为rhel6-node1" class="headerlink" title="改名虚拟机rh6_n1为rhel6_node1"></a>改名虚拟机rh6_n1为rhel6_node1</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">virsh dumpxml rhel_n1 &gt; /root/new.xml</span><br><span class="line">vim /root/new.xml</span><br><span class="line">virsh define /root/new.xml</span><br><span class="line">virsh undefine rh6_n1</span><br></pre></td></tr></table></figure>
+<h4 id="复制虚拟机rhel6-node1"><a href="#复制虚拟机rhel6-node1" class="headerlink" title="复制虚拟机rhel6_node1"></a>复制虚拟机rhel6_node1</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">virsh dumpxml rhel6_node1 &gt; /root/copy.xml</span><br><span class="line">vim /root/copy.xml</span><br><span class="line">cd /data/images</span><br><span class="line">cp node1.img node2.img</span><br><span class="line">virsh define /root/copy.xml</span><br></pre></td></tr></table></figure>
+<h3 id="kvm虚拟机操作"><a href="#kvm虚拟机操作" class="headerlink" title="kvm虚拟机操作"></a>kvm虚拟机操作</h3><p><code>virsh edit 虚拟机</code><br><code>virt-clone -o 已有虚拟机名 -n 新虚拟机名 -f 克隆的虚拟机磁盘文件</code><br><code>virsh net-edit 网卡名</code><br><code>virsh net-destroy 网卡名</code><br><code>virsh net-start 网卡名</code></p>
+<h3 id="虚拟机磁盘类型"><a href="#虚拟机磁盘类型" class="headerlink" title="虚拟机磁盘类型"></a>虚拟机磁盘类型</h3><ul>
+<li>raw 原始类型</li>
+<li>qcow2 </li>
+</ul>
+<h4 id="qcow磁盘操作"><a href="#qcow磁盘操作" class="headerlink" title="qcow磁盘操作"></a>qcow磁盘操作</h4><ul>
+<li><code>qemu-img create -f qcow2 /data/images/disk1.img 100G</code></li>
+</ul>
+<h4 id="转换虚拟机磁盘类型"><a href="#转换虚拟机磁盘类型" class="headerlink" title="转换虚拟机磁盘类型"></a>转换虚拟机磁盘类型</h4><ol>
+<li><p>转换磁盘文件类型<br><code>qemu-img convert -O qcow2 -c /data/images/node2.img /data/images/node2.qcow2</code></p>
+</li>
+<li><p>修改虚拟机配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">virsh edit rhel6_node2</span><br><span class="line">    &lt;disk type=&apos;file&apos; device=&apos;disk&apos;&gt;</span><br><span class="line">      &lt;driver name=&apos;qemu&apos; type=&apos;qcow2&apos; cache=&apos;none&apos;/&gt;     //更改type的raw为qcow2</span><br><span class="line">      &lt;source file=&apos;/data/images/node2.qcow2&apos;/&gt;           //更改file的磁盘文件路径   </span><br><span class="line">      &lt;target dev=&apos;vda&apos; bus=&apos;virtio&apos;/&gt;</span><br><span class="line">      &lt;address type=&apos;pci&apos; domain=&apos;0x0000&apos; bus=&apos;0x00&apos; slot=&apos;0x06&apos; function=&apos;0x0&apos;/&gt;</span><br><span class="line">    &lt;/disk&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除旧虚拟机磁盘文件<br><code>rm -rf /data/images/node2.img</code></p>
+</li>
+</ol>
+<h4 id="快速创建虚拟机"><a href="#快速创建虚拟机" class="headerlink" title="快速创建虚拟机"></a>快速创建虚拟机</h4><ol>
+<li><p>准备硬盘，使用copy on write方式<br><code>qemu-img create -f qcow2 -b oldimg newimg</code></p>
+</li>
+<li><p>修改虚拟机配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">virsh edit oldgues</span><br><span class="line">修改uuid title disk interface 参数</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="qemu磁盘快照"><a href="#qemu磁盘快照" class="headerlink" title="qemu磁盘快照"></a>qemu磁盘快照</h4><p>qemu最对qcow格式的磁盘文件建立快照</p>
+<ul>
+<li><code>qemu-img snapshot -c 快照名 磁盘名</code>  创建快照</li>
+<li><code>qemu-img snapshot -l 磁盘名</code>  查看磁盘对应的快照</li>
+<li><code>qemu-img snapshot -a 快照名 磁盘名</code> 恢复快照</li>
+<li><code>qemu-img snapshot -d 快照名 磁盘名</code> 删除指定快照</li>
+</ul>
+<h4 id="从命令创建虚拟机"><a href="#从命令创建虚拟机" class="headerlink" title="从命令创建虚拟机"></a>从命令创建虚拟机</h4><p><code>qemu-img create -f qcow2 /data/images/muban.qcow2</code><br><code>virt-install --name vpcname --vcpus=1 --ram=1024 --diks path=/data/images/vpcname.qcow2,format=qcow2 --network netowrk=private1 --pxe</code></p>
+<h3 id="从模板快速创建虚拟机"><a href="#从模板快速创建虚拟机" class="headerlink" title="从模板快速创建虚拟机"></a>从模板快速创建虚拟机</h3><p>最后附上我自己写的脚本，用于从模板快速克隆虚拟机<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># 使用此脚本之前需要先创建一个KVM虚拟机，</span></span><br><span class="line"><span class="comment"># 磁盘格式为qcow2。并且把模板虚拟机的xml</span></span><br><span class="line"><span class="comment"># 拷贝到$basedir目录下，命名为base.xml</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$#</span> -lt 1 ]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"不告诉我虚拟机名字，我给你克隆到哪？"</span></span><br><span class="line">	<span class="built_in">exit</span> 2</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">basedir=/home/mk/kvm_img</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> vmname <span class="keyword">in</span> <span class="variable">$@</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span> [ -f <span class="variable">$basedir</span>/<span class="variable">$vmname</span>.qcow2 ]</span><br><span class="line">	<span class="keyword">then</span></span><br><span class="line">		<span class="built_in">echo</span> <span class="string">"大哥！有这个虚拟机的磁盘文件，我可不给你克隆！"</span></span><br><span class="line">		<span class="built_in">exit</span> 1</span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line">	vmxml=/tmp/<span class="variable">$vmname</span>.xml</span><br><span class="line">	uuid=`uuidgen`</span><br><span class="line">	<span class="built_in">let</span> mac=<span class="variable">$RANDOM</span>%100</span><br><span class="line">	<span class="keyword">if</span> [ <span class="variable">$mac</span> -lt 10 ]</span><br><span class="line">	<span class="keyword">then</span></span><br><span class="line">		mac=<span class="string">"0<span class="variable">$mac</span>"</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line">	</span><br><span class="line">	cp <span class="variable">$basedir</span>/base.xml <span class="variable">$vmxml</span></span><br><span class="line">	qemu-img create -f qcow2 -b <span class="variable">$basedir</span>/base.qcow2 <span class="variable">$basedir</span>/<span class="variable">$vmname</span>.qcow2 &amp;&gt; /dev/null</span><br><span class="line">	sed -i <span class="string">"s/&lt;uuid&gt;.*&lt;/&lt;uuid&gt;<span class="variable">$uuid</span>&lt;/"</span>  <span class="variable">$vmxml</span></span><br><span class="line">	sed -i <span class="string">"s/base/<span class="variable">$vmname</span>/g"</span> <span class="variable">$vmxml</span></span><br><span class="line">	sed -i <span class="string">"s/e7/<span class="variable">$mac</span>/g"</span> <span class="variable">$vmxml</span></span><br><span class="line">	virsh define <span class="variable">$vmxml</span></span><br><span class="line">	</span><br><span class="line">	rm -rf <span class="variable">$vmxml</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/06/golang-oci8/" itemprop="url">
-              
-                <span itemprop="name">Linux配置golang-OCI8开发环境</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-06T00:00:00+08:00"
-              content="2018-03-06" >
-          03-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/07/mysql/" rel="next" title="mysql学习笔记">
+                <i class="fa fa-chevron-left"></i> mysql学习笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -446,6 +566,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -468,8 +592,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -524,6 +657,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#vrish命令"><span class="nav-number">1.</span> <span class="nav-text">vrish命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kvm虚拟机配置文件"><span class="nav-number">2.</span> <span class="nav-text">kvm虚拟机配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调整虚拟机设置"><span class="nav-number">3.</span> <span class="nav-text">调整虚拟机设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#改名虚拟机rh6-n1为rhel6-node1"><span class="nav-number">3.1.</span> <span class="nav-text">改名虚拟机rh6_n1为rhel6_node1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复制虚拟机rhel6-node1"><span class="nav-number">3.2.</span> <span class="nav-text">复制虚拟机rhel6_node1</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kvm虚拟机操作"><span class="nav-number">4.</span> <span class="nav-text">kvm虚拟机操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#虚拟机磁盘类型"><span class="nav-number">5.</span> <span class="nav-text">虚拟机磁盘类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#qcow磁盘操作"><span class="nav-number">5.1.</span> <span class="nav-text">qcow磁盘操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#转换虚拟机磁盘类型"><span class="nav-number">5.2.</span> <span class="nav-text">转换虚拟机磁盘类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#快速创建虚拟机"><span class="nav-number">5.3.</span> <span class="nav-text">快速创建虚拟机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#qemu磁盘快照"><span class="nav-number">5.4.</span> <span class="nav-text">qemu磁盘快照</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从命令创建虚拟机"><span class="nav-number">5.5.</span> <span class="nav-text">从命令创建虚拟机</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从模板快速创建虚拟机"><span class="nav-number">6.</span> <span class="nav-text">从模板快速创建虚拟机</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -661,6 +810,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
