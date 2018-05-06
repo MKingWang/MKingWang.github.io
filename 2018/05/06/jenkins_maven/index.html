@@ -88,16 +88,16 @@
 <meta property="og:url" content="http://www.leixin.wang/2018/05/06/jenkins_maven/index.html">
 <meta property="og:site_name" content="MKing&#39;s Blog">
 <meta property="og:description" content="目前比较火的自动构建工具Jenkins不用过多介绍了，一款非常强大的CI工具。然后是maven，java的自动构建工具。下面简单介绍一下这两款工具的部署过程 0x01 安装java环境jenkins和maven都依赖java环境1rpm -ivh jdk-8u131-linux-x64.rpm 0x02 安装maven1234567891011121314151617181920212223242">
-<meta property="og:image" content="http://www.leixin.wang/2018/05/06/jenkins_maven/images/jenkins/1.png">
-<meta property="og:image" content="http://www.leixin.wang/2018/05/06/jenkins_maven/images/jenkins/2.png">
-<meta property="og:image" content="http://www.leixin.wang/2018/05/06/jenkins_maven/images/jenkins/3.png">
-<meta property="og:image" content="http://www.leixin.wang/2018/05/06/jenkins_maven/images/jenkins/4.png">
-<meta property="og:image" content="http://www.leixin.wang/2018/05/06/jenkins_maven/images/jenkins/5.png">
-<meta property="og:updated_time" content="2018-05-06T09:24:02.168Z">
+<meta property="og:image" content="http://www.leixin.wang/images/jenkins/1.png">
+<meta property="og:image" content="http://www.leixin.wang/images/jenkins/2.png">
+<meta property="og:image" content="http://www.leixin.wang/images/jenkins/3.png">
+<meta property="og:image" content="http://www.leixin.wang/images/jenkins/4.png">
+<meta property="og:image" content="http://www.leixin.wang/images/jenkins/5.png">
+<meta property="og:updated_time" content="2018-05-06T10:17:13.462Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jenkins+maven java自动构建环境搭建">
 <meta name="twitter:description" content="目前比较火的自动构建工具Jenkins不用过多介绍了，一款非常强大的CI工具。然后是maven，java的自动构建工具。下面简单介绍一下这两款工具的部署过程 0x01 安装java环境jenkins和maven都依赖java环境1rpm -ivh jdk-8u131-linux-x64.rpm 0x02 安装maven1234567891011121314151617181920212223242">
-<meta name="twitter:image" content="http://www.leixin.wang/2018/05/06/jenkins_maven/images/jenkins/1.png">
+<meta name="twitter:image" content="http://www.leixin.wang/images/jenkins/1.png">
 
 
 
@@ -313,7 +313,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-06T17:24:02+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-06T18:17:13+08:00">
                 2018-05-06
               </time>
             
@@ -387,11 +387,11 @@
 <h3 id="0x02-安装maven"><a href="#0x02-安装maven" class="headerlink" title="0x02 安装maven"></a>0x02 安装maven</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /opt</span><br><span class="line">wget http://apache.osuosl.org/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz</span><br><span class="line">tar xf apache-maven-3.5.2-bin.tar.gz</span><br><span class="line">mv apache-maven-3.5.2 maven</span><br><span class="line"></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="comment">#增加maven的环境变量</span></span><br><span class="line"><span class="built_in">export</span> MAV_HOME=/opt/maven</span><br><span class="line"><span class="built_in">export</span> MAV=<span class="variable">$MAV_HOME</span>/bin</span><br><span class="line"><span class="built_in">export</span> MAV_OPTS=<span class="string">'-Xms256m -Xmx512m'</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$MAV</span>:<span class="variable">$PATH</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#配置maven本地源的路径</span></span><br><span class="line">vim /opt/maven/conf/settings.xml</span><br><span class="line"><span class="comment">#增加以下内容</span></span><br><span class="line">&lt;localRepository&gt;/data/maven_repo&lt;/localRepository&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">#测试是否安装成功</span></span><br><span class="line"><span class="built_in">source</span> /etc/profile</span><br><span class="line">mvn --version</span><br><span class="line"><span class="comment">#出现如下内容说明安装成功了</span></span><br><span class="line">Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T15:58:13+08:00)</span><br><span class="line">Maven home: /opt/maven</span><br><span class="line">Java version: 1.8.0_131, vendor: Oracle Corporation</span><br><span class="line">Java home: /usr/java/jdk1.8.0_131/jre</span><br><span class="line">Default locale: zh_CN, platform encoding: UTF-8</span><br><span class="line">OS name: <span class="string">"linux"</span>, version: <span class="string">"3.10.0-693.el7.x86_64"</span>, arch: <span class="string">"amd64"</span>, family: <span class="string">"unix"</span></span><br></pre></td></tr></table></figure>
 <h3 id="0x03-安装Jenkins"><a href="#0x03-安装Jenkins" class="headerlink" title="0x03 安装Jenkins"></a>0x03 安装Jenkins</h3><p>为了安全起见，jenkins建议使用非root用户运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">useradd jenkins</span><br><span class="line">mkdir /opt/jenkins</span><br><span class="line"><span class="built_in">cd</span> /opt/jenkins</span><br><span class="line">wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war</span><br><span class="line">chown jenkins.jenkins /opt/jenkins -R</span><br><span class="line">su - jenkins</span><br><span class="line">setsid java -jar /opt/jenkins/jenkins.war &gt;&gt; /opt/jenkins/jenkins.log</span><br></pre></td></tr></table></figure></p>
 <p>打开jenkins页面，首先回提示输入输入随机密码，一般在/home/jenkins/.jenkins/secrets/initialAdminPassword<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat /home/jenkins/.jenkins/secrets/initialAdminPassword</span><br><span class="line">7bd7d4f5ff244944a9a96754a8e17c84</span><br></pre></td></tr></table></figure></p>
-<p><img src="images/jenkins/1.png" alt="a"></p>
-<p>输入随机密码，点击下一步后，提示安装插件，一般点左边这个推荐安装就行<br><img src="images/jenkins/2.png" alt="b"></p>
-<p>出现下面的图就开启等待状态了<br><img src="images/jenkins/3.png" alt="c"></p>
-<p>插件安装完后，按照提示创建管理员帐号<br><img src="images/jenkins/4.png" alt="d"></p>
-<p>配置好管理员帐号后，依次进入<code>Manage Jenkins</code>-&gt;<code>Configure Global Security</code>,进入安全设置，开启允许用户注册<br><img src="images/jenkins/5.png" alt="e"></p>
+<p><img src="/images/jenkins/1.png" alt="a"></p>
+<p>输入随机密码，点击下一步后，提示安装插件，一般点左边这个推荐安装就行<br><img src="/images/jenkins/2.png" alt="b"></p>
+<p>出现下面的图就开启等待状态了<br><img src="/images/jenkins/3.png" alt="c"></p>
+<p>插件安装完后，按照提示创建管理员帐号<br><img src="/images/jenkins/4.png" alt="d"></p>
+<p>配置好管理员帐号后，依次进入<code>Manage Jenkins</code>-&gt;<code>Configure Global Security</code>,进入安全设置，开启允许用户注册<br><img src="/images/jenkins/5.png" alt="e"></p>
 
       
     </div>
