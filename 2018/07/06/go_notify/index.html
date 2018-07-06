@@ -82,15 +82,16 @@
 
 
 
-<meta name="description" content="君子欲讷于言而敏于行">
-<meta property="og:type" content="website">
+<meta name="description" content="对于linux有个inotify机制想必各linuxer都是知道的，最近在学习GO语言想使用go实现inotify-toos的一些功能，比如发现指定目录下的新建文件，关闭文件等操作。起初使用github上fsnotify/fsnotify发现无法监控到write_close状态，经过一些时间的搜寻发现ericbrisrubio/fsnotify支持linux原生的inotify机制。下面是代码：1">
+<meta property="og:type" content="article">
 <meta property="og:title" content="MKing&#39;s Blog">
-<meta property="og:url" content="http://www.leixin.wang/archives/2017/index.html">
+<meta property="og:url" content="http://www.leixin.wang/2018/07/06/go_notify/index.html">
 <meta property="og:site_name" content="MKing&#39;s Blog">
-<meta property="og:description" content="君子欲讷于言而敏于行">
+<meta property="og:description" content="对于linux有个inotify机制想必各linuxer都是知道的，最近在学习GO语言想使用go实现inotify-toos的一些功能，比如发现指定目录下的新建文件，关闭文件等操作。起初使用github上fsnotify/fsnotify发现无法监控到write_close状态，经过一些时间的搜寻发现ericbrisrubio/fsnotify支持linux原生的inotify机制。下面是代码：1">
+<meta property="og:updated_time" content="2018-07-06T03:56:58.426Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MKing&#39;s Blog">
-<meta name="twitter:description" content="君子欲讷于言而敏于行">
+<meta name="twitter:description" content="对于linux有个inotify机制想必各linuxer都是知道的，最近在学习GO语言想使用go实现inotify-toos的一些功能，比如发现指定目录下的新建文件，关闭文件等操作。起初使用github上fsnotify/fsnotify发现无法监控到write_close状态，经过一些时间的搜寻发现ericbrisrubio/fsnotify支持linux原生的inotify机制。下面是代码：1">
 
 
 
@@ -120,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://www.leixin.wang/archives/2017/"/>
+  <link rel="canonical" href="http://www.leixin.wang/2018/07/06/go_notify/"/>
 
 
 
 
 
-  <title>归档 | MKing's Blog</title>
+  <title> | MKing's Blog</title>
   
 
 
@@ -145,7 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -263,74 +264,172 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 11 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.leixin.wang/2018/07/06/go_notify/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MKing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MKing's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/07/15/zabbix_temp/" itemprop="url">
-              
-                <span itemprop="name">zabbix监控环境温度</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-15T00:00:00+08:00"
-              content="2017-07-15" >
-          07-15
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-06T11:56:58+08:00">
+                2018-07-06
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  455
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>对于linux有个inotify机制想必各linuxer都是知道的，最近在学习GO语言想使用go实现inotify-toos的一些功能，比如发现指定目录下的新建文件，关闭文件等操作。起初使用github上<code>fsnotify/fsnotify</code>发现无法监控到write_close状态，经过一些时间的搜寻发现<code>ericbrisrubio/fsnotify</code>支持linux原生的inotify机制。下面是代码：<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">"fmt"</span></span><br><span class="line">    <span class="string">"io/ioutil"</span></span><br><span class="line">    <span class="string">"os"</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"github.com/ericbrisrubio/fsnotify"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    filename := os.Args[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">go</span> watchDir(filename)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">select</span> &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">将监控主函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">watchDir</span><span class="params">(filename <span class="keyword">string</span>)</span></span> &#123;</span><br><span class="line">    watch, _ := fsnotify.NewWatcher()</span><br><span class="line">    <span class="keyword">defer</span> watch.Close()</span><br><span class="line"></span><br><span class="line">    err := watch.Watch(filename)</span><br><span class="line">    <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">        fmt.Errorf(<span class="string">"监听目录失败：%v"</span>, err.Error())</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//把指定目录下的所有目录都加入监控</span></span><br><span class="line">    <span class="keyword">for</span> _, k := <span class="keyword">range</span> listDir(filename) &#123;</span><br><span class="line">        watch.Watch(fmt.Sprintf(<span class="string">"%s/%s"</span>, filename, k))</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> &#123;</span><br><span class="line">        <span class="keyword">select</span> &#123;</span><br><span class="line">        <span class="keyword">case</span> event := &amp;lt;-watch.Event:</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> event.IsCreate() &#123;</span><br><span class="line">                    fmt.Println(event.Name, <span class="string">" create"</span>)</span><br><span class="line">                    <span class="comment">//发现创建的文件是目录，则加入监控</span></span><br><span class="line">                    <span class="keyword">if</span> isDir(event.Name) &#123;</span><br><span class="line">                        watch.Watch(event.Name)</span><br><span class="line">                        <span class="keyword">continue</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">//发现文件被写入关闭则写入消息队列</span></span><br><span class="line">                <span class="keyword">if</span> event.IsCloseWrite() &#123;</span><br><span class="line">                    fmt.Println(event.Name, <span class="string">" Close write"</span>)</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        <span class="keyword">case</span> err := &amp;lt;-watch.Error:</span><br><span class="line">            &#123;</span><br><span class="line">                fmt.Errorf(<span class="string">"Err:%v"</span>, err)</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">检查是否是目录</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">isDir</span><span class="params">(path <span class="keyword">string</span>)</span> <span class="title">bool</span></span> &#123;</span><br><span class="line">    stat, err := os.Stat(path)</span><br><span class="line">    <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">        fmt.Errorf(<span class="string">"%v"</span>, err.Error())</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> stat.IsDir()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">递归列出所有目录</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">listDir</span><span class="params">(path <span class="keyword">string</span>)</span> []<span class="title">string</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> dirlist []<span class="keyword">string</span></span><br><span class="line">    fileList, err := ioutil.ReadDir(path)</span><br><span class="line">    <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">        fmt.Errorf(<span class="string">"list %s err:%v"</span>, path, err.Error())</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> _, fileName := <span class="keyword">range</span> fileList &#123;</span><br><span class="line">        <span class="keyword">if</span> fileName.IsDir() &#123;</span><br><span class="line">            dirlist = <span class="built_in">append</span>(dirlist, fmt.Sprintf(<span class="string">"%s"</span>, fileName.Name()))</span><br><span class="line">            <span class="keyword">for</span> _, k := <span class="keyword">range</span> listDir(fmt.Sprintf(<span class="string">"%s/%s"</span>, path, fileName.Name())) &#123;</span><br><span class="line">                dirlist = <span class="built_in">append</span>(dirlist, fmt.Sprintf(<span class="string">"%s/%s"</span>, fileName.Name(), k))</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dirlist</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/06/install_go_for_linux/" rel="next" title="Linux下安装go开发环境">
+                <i class="fa fa-chevron-left"></i> Linux下安装go开发环境
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -338,6 +437,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -553,6 +656,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
