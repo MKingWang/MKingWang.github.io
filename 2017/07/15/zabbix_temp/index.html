@@ -82,15 +82,24 @@
 
 
 
-<meta name="description" content="君子欲讷于言而敏于行">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MKing&#39;s Blog">
-<meta property="og:url" content="http://www.leixin.wang/archives/2018/04/index.html">
+<meta name="description" content="配件及准备    树莓派（装好centos7系统和zabbix agent） 1     ds18b20 1    公司自建机房，然后空调故障，扣了我们背锅侠每人500块钱，表示很郁闷。够吃多少顿大排档了！！本背锅侠表示不服！由于正在做公司的ZABBIX监控，手上正好有块树莓派（本背锅侠自己的，已被公司征用），于是想着把温度整合到zabbix里面。从某宝买了一个DS18B20板子，已经焊好电阻等器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="zabbix监控环境温度">
+<meta property="og:url" content="http://www.leixin.wang/2017/07/15/zabbix_temp/index.html">
 <meta property="og:site_name" content="MKing&#39;s Blog">
-<meta property="og:description" content="君子欲讷于言而敏于行">
+<meta property="og:description" content="配件及准备    树莓派（装好centos7系统和zabbix agent） 1     ds18b20 1    公司自建机房，然后空调故障，扣了我们背锅侠每人500块钱，表示很郁闷。够吃多少顿大排档了！！本背锅侠表示不服！由于正在做公司的ZABBIX监控，手上正好有块树莓派（本背锅侠自己的，已被公司征用），于是想着把温度整合到zabbix里面。从某宝买了一个DS18B20板子，已经焊好电阻等器">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5791644-56fcdb07c6a0ab8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5791644-67fb61f31271bd7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5791644-3328811af3ae9bc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5791644-6fb84a2e1d8786a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5791644-ac228e915d8e8549.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5791644-005828b388cf329e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5791644-715d37d0d352f0fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-07-06T03:51:31.680Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MKing&#39;s Blog">
-<meta name="twitter:description" content="君子欲讷于言而敏于行">
+<meta name="twitter:title" content="zabbix监控环境温度">
+<meta name="twitter:description" content="配件及准备    树莓派（装好centos7系统和zabbix agent） 1     ds18b20 1    公司自建机房，然后空调故障，扣了我们背锅侠每人500块钱，表示很郁闷。够吃多少顿大排档了！！本背锅侠表示不服！由于正在做公司的ZABBIX监控，手上正好有块树莓派（本背锅侠自己的，已被公司征用），于是想着把温度整合到zabbix里面。从某宝买了一个DS18B20板子，已经焊好电阻等器">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5791644-56fcdb07c6a0ab8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -120,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://www.leixin.wang/archives/2018/04/"/>
+  <link rel="canonical" href="http://www.leixin.wang/2017/07/15/zabbix_temp/"/>
 
 
 
 
 
-  <title>归档 | MKing's Blog</title>
+  <title>zabbix监控环境温度 | MKing's Blog</title>
   
 
 
@@ -145,7 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -263,74 +272,228 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 10 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.leixin.wang/2017/07/15/zabbix_temp/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MKing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MKing's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/04/11/zabbix_install/" itemprop="url">
-              
-                <span itemprop="name">安装zabbix小记</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">zabbix监控环境温度</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-11T17:23:31+08:00"
-              content="2018-04-11" >
-          04-11
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-15T00:00:00+08:00">
+                2017-07-15
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/运维/" itemprop="url" rel="index">
+                    <span itemprop="name">运维</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  577
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>配件及准备</p>
+<table>
+<thead>
+<tr>
+<th>树莓派（装好centos7系统和zabbix agent）</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ds18b20</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>公司自建机房，然后空调故障，扣了我们背锅侠每人500块钱，表示很郁闷。够吃多少顿大排档了！！本背锅侠表示不服！由于正在做公司的ZABBIX监控，手上正好有块树莓派（本背锅侠自己的，已被公司征用），于是想着把温度整合到zabbix里面。从某宝买了一个DS18B20板子，已经焊好电阻等器件，如图：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/5791644-56fcdb07c6a0ab8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="DS18B20"></p>
+<h4 id="0x01-经过若干天的等待，某宝的DS18B20到了之后，接上树莓派，接线如下图所示："><a href="#0x01-经过若干天的等待，某宝的DS18B20到了之后，接上树莓派，接线如下图所示：" class="headerlink" title="0x01  经过若干天的等待，某宝的DS18B20到了之后，接上树莓派，接线如下图所示："></a>0x01  经过若干天的等待，某宝的DS18B20到了之后，接上树莓派，接线如下图所示：</h4><p><img src="http://upload-images.jianshu.io/upload_images/5791644-67fb61f31271bd7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="接线图"></p>
+<h4 id="0x02-修改树莓派的boot配置，添加对ds18b20的驱动支持，不然读取不到温度信息"><a href="#0x02-修改树莓派的boot配置，添加对ds18b20的驱动支持，不然读取不到温度信息" class="headerlink" title="0x02 修改树莓派的boot配置，添加对ds18b20的驱动支持，不然读取不到温度信息"></a>0x02 修改树莓派的boot配置，添加对ds18b20的驱动支持，不然读取不到温度信息</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"dtoverlay=w1-gpio"</span> &gt;&gt; /boot/config.txt</span><br></pre></td></tr></table></figure>
+<p>蓝后，重启树莓派，发现可以读取到ds18b20的驱动信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cat /sys/bus/w1/devices/w1_bus_master1/28-0316a281adff/w1_slave </span><br><span class="line">7f 01 4b 46 7f ff 0c 10 ba : crc=ba YES</span><br><span class="line">7f 01 4b 46 7f ff 0c 10 ba t=23937</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p> 注：28-0316a281adff是设备号，每个人的设备号会不一样。<br><br>  其中t=23937就是温度，计算出实际问题，只需要除以1000就可以。</p>
+</blockquote>
+<h4 id="0x03-使用代码获取温度"><a href="#0x03-使用代码获取温度" class="headerlink" title="0x03 使用代码获取温度"></a>0x03 使用代码获取温度</h4><p>这一步很简单，对于会linux的小伙伴应该超级简单。一条awk就可以搞定<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">awk -F= <span class="string">'$0~/t=/&#123;print $2/1000&#125;'</span> /sys/bus/w1/devices/w1_bus_master1/28-0316a281adff/w1_slave</span><br><span class="line">24.25</span><br></pre></td></tr></table></figure></p>
+<p>ps：最近本背锅侠在看golang，于是闲的无聊，就用golang写了一版<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">        <span class="string">"fmt"</span></span><br><span class="line">        <span class="string">"io/ioutil"</span></span><br><span class="line">        <span class="string">"strconv"</span></span><br><span class="line">        <span class="string">"strings"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">        date, err := ioutil.ReadFile(<span class="string">"/sys/bus/w1/devices/28-0316a281adff/w1_slave"</span>)</span><br><span class="line">        <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">                <span class="keyword">return</span></span><br><span class="line">        &#125;</span><br><span class="line">        tmp := fmt.Sprintf(<span class="string">"%s"</span>, date)</span><br><span class="line">        buffer := strings.Split(tmp, <span class="string">"="</span>)</span><br><span class="line">        buffer1 := strings.Split(buffer[<span class="number">2</span>], <span class="string">"\n"</span>)</span><br><span class="line">        temp, err := strconv.Atoi(buffer1[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">                fmt.Println(err)</span><br><span class="line">        &#125;</span><br><span class="line">        fmt.Println(<span class="keyword">float64</span>(temp) / <span class="number">1000.0</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="0x03-接入zabbix"><a href="#0x03-接入zabbix" class="headerlink" title="0x03 接入zabbix"></a>0x03 接入zabbix</h4><p>修改zabbix_agentd的配置文件，添加key和对应程序的路径（本背锅侠用golang写的，所以直接编译成二进制了）<br><code>UserParameter=get_temp,/opt/zabbix_agent/script/get_temp</code></p>
+<h4 id="0x04-zabbix-server添加监控项、触发器和图形"><a href="#0x04-zabbix-server添加监控项、触发器和图形" class="headerlink" title="0x04 zabbix server添加监控项、触发器和图形"></a>0x04 zabbix server添加监控项、触发器和图形</h4><p>监控项配置如下：信息要选浮点数<br><img src="http://upload-images.jianshu.io/upload_images/5791644-3328811af3ae9bc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="监控项"></p>
+<p>触发器配置如下：<br><img src="http://upload-images.jianshu.io/upload_images/5791644-6fb84a2e1d8786a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="触发器"></p>
+<p>图形配置如下：在监控项里面选择上面配置的温度监控项<br><img src="http://upload-images.jianshu.io/upload_images/5791644-ac228e915d8e8549.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图形"></p>
+<h4 id="0x04-zabbix效果图和grafana上的效果"><a href="#0x04-zabbix效果图和grafana上的效果" class="headerlink" title="0x04 zabbix效果图和grafana上的效果"></a>0x04 zabbix效果图和grafana上的效果</h4><p>zabbix效果图<br><img src="http://upload-images.jianshu.io/upload_images/5791644-005828b388cf329e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="zabbix效果"></p>
+<p>grafana效果图<br><img src="http://upload-images.jianshu.io/upload_images/5791644-715d37d0d352f0fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="grafana效果"></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/08/LVM/" rel="next" title="LVM常用命令">
+                <i class="fa fa-chevron-left"></i> LVM常用命令
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/06/golang-oci8/" rel="prev" title="Linux配置golang-OCI8开发环境">
+                Linux配置golang-OCI8开发环境 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -338,6 +501,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -360,8 +527,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -416,6 +592,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#0x01-经过若干天的等待，某宝的DS18B20到了之后，接上树莓派，接线如下图所示："><span class="nav-number">1.</span> <span class="nav-text">0x01  经过若干天的等待，某宝的DS18B20到了之后，接上树莓派，接线如下图所示：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x02-修改树莓派的boot配置，添加对ds18b20的驱动支持，不然读取不到温度信息"><span class="nav-number">2.</span> <span class="nav-text">0x02 修改树莓派的boot配置，添加对ds18b20的驱动支持，不然读取不到温度信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x03-使用代码获取温度"><span class="nav-number">3.</span> <span class="nav-text">0x03 使用代码获取温度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x03-接入zabbix"><span class="nav-number">4.</span> <span class="nav-text">0x03 接入zabbix</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x04-zabbix-server添加监控项、触发器和图形"><span class="nav-number">5.</span> <span class="nav-text">0x04 zabbix server添加监控项、触发器和图形</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0x04-zabbix效果图和grafana上的效果"><span class="nav-number">6.</span> <span class="nav-text">0x04 zabbix效果图和grafana上的效果</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -553,6 +745,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
