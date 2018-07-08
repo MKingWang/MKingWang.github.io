@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.leixin.wang/2018/07/08/go_bubble/</loc>
+    
+    <lastmod>2018-07-08T05:19:28.858Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.leixin.wang/2018/07/03/rediscluster/</loc>
     
     <lastmod>2018-07-06T04:10:46.298Z</lastmod>
@@ -58,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://www.leixin.wang/2018/03/08/kvm/</loc>
+    <loc>http://www.leixin.wang/2016/07/08/LVM/</loc>
     
     <lastmod>2018-03-09T04:54:32.348Z</lastmod>
     
@@ -72,7 +79,7 @@
   </url>
   
   <url>
-    <loc>http://www.leixin.wang/2016/07/08/LVM/</loc>
+    <loc>http://www.leixin.wang/2018/03/08/kvm/</loc>
     
     <lastmod>2018-03-09T04:54:32.348Z</lastmod>
     
