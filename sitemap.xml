@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.leixin.wang/2018/12/07/%08luoyangGL/</loc>
+    
+    <lastmod>2018-12-07T15:33:15.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.leixin.wang/2018/07/08/go_bubble/</loc>
     
     <lastmod>2018-07-08T15:15:21.000Z</lastmod>
@@ -65,14 +72,14 @@
   </url>
   
   <url>
-    <loc>http://www.leixin.wang/2016/07/08/LVM/</loc>
+    <loc>http://www.leixin.wang/2018/03/08/kvm/</loc>
     
     <lastmod>2018-03-09T04:54:32.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.leixin.wang/2018/03/08/kvm/</loc>
+    <loc>http://www.leixin.wang/2016/07/08/LVM/</loc>
     
     <lastmod>2018-03-09T04:54:32.000Z</lastmod>
     
@@ -86,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://www.leixin.wang/categories/index-1.html</loc>
+    <loc>http://www.leixin.wang/categories/index.html</loc>
     
     <lastmod>2018-03-09T04:54:32.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.leixin.wang/categories/index.html</loc>
+    <loc>http://www.leixin.wang/categories/index-1.html</loc>
     
     <lastmod>2018-03-09T04:54:32.000Z</lastmod>
     
