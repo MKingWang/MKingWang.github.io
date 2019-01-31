@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.leixin.wang/raspberry/index.html</loc>
+    
+    <lastmod>2019-01-31T03:29:32.794Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.leixin.wang/linux-cmd/index.html</loc>
+    
+    <lastmod>2019-01-31T03:29:32.793Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.leixin.wang/2019/01/29/oneline-play-rasp/</loc>
+    
+    <lastmod>2019-01-31T03:29:32.783Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.leixin.wang/2018/07/08/go_bubble/</loc>
     
     <lastmod>2018-07-08T15:15:21.000Z</lastmod>
@@ -86,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://www.leixin.wang/categories/index.html</loc>
+    <loc>http://www.leixin.wang/categories/index-1.html</loc>
     
     <lastmod>2018-03-09T04:54:32.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.leixin.wang/categories/index-1.html</loc>
+    <loc>http://www.leixin.wang/categories/index.html</loc>
     
     <lastmod>2018-03-09T04:54:32.000Z</lastmod>
     
