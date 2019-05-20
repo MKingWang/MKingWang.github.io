@@ -278,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.leixin.wang/2018/03/07/svn/">
+    <link itemprop="mainEntityOfPage" href="http://www.leixin.wang/2018/03/08/kvm/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MKing">
@@ -297,7 +297,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/07/svn/" itemprop="url">版本控制软件之svn</a></h1>
+                <a class="post-title-link" href="/2018/03/08/kvm/" itemprop="url">kvm虚拟机常用命令</a></h1>
         
 
         <div class="post-meta">
@@ -309,8 +309,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T00:00:00+08:00">
-                2018-03-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-08T00:00:00+08:00">
+                2018-03-08
               </time>
             
 
@@ -363,7 +363,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  675
+                  974
                 </span>
               
 
@@ -379,7 +379,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  4
                 </span>
               
             </div>
@@ -402,11 +402,37 @@
       
         
           
-           SVN作为新一代代码版本管理工具，有很多优点，管理方便，逻辑明确，安全性高，代码一致性高。SVN数据存储有两种方式，BDB（事务安全表类型）和FSFS（一种不需要数据库的存储系统），为了避免在服务器连接中断时锁住数据，FSFS是一种更安全也更多人使用的方式。SVN的运行方式也有两种，一种是独立服务
+          KVM虚拟化之命令行管理虚拟机
+vrish命令
+
+
+命令
+功能
+
+
+
+
+virsh
+进入KVM交互操作
+
+
+virsh nodeinfo
+查看物理机 信息
+
+
+virsh list / virsh list –all
+查看虚拟机列表
+
+
+virsh dominfo 虚拟机名
+查看指定虚拟机信息
+
+
+
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/07/svn/#more" rel="contents">
+            <a class="btn" href="/2018/03/08/kvm/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -587,6 +613,185 @@ mysql数据库安装安装mysql数据库，5.6版本开始的数据库，会在~
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/07/mysql/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.leixin.wang/2018/03/07/svn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MKing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MKing's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/07/svn/" itemprop="url">版本控制软件之svn</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T00:00:00+08:00">
+                2018-03-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  675
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+           SVN作为新一代代码版本管理工具，有很多优点，管理方便，逻辑明确，安全性高，代码一致性高。SVN数据存储有两种方式，BDB（事务安全表类型）和FSFS（一种不需要数据库的存储系统），为了避免在服务器连接中断时锁住数据，FSFS是一种更安全也更多人使用的方式。SVN的运行方式也有两种，一种是独立服务
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/07/svn/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1426,7 +1631,7 @@ LVM逻辑卷操作parted /dev/vda  #对
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

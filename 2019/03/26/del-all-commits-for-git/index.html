@@ -88,7 +88,7 @@
 <meta property="og:url" content="http://www.leixin.wang/2019/03/26/del-all-commits-for-git/index.html">
 <meta property="og:site_name" content="MKing&#39;s Blog">
 <meta property="og:description" content="记录一下，删除所有git commit的方法，但不改变原有代码的方式 123456789101112# 1. 将当前分支备份git checkout --orphan backup# 2. 添加文件到备份分支git add -A# 3. 提交git commit -am &quot;commit message&quot;# 4. 删除分支git branch -D master# 5. 把当前分支重命名为备份的分支">
-<meta property="og:updated_time" content="2019-03-26T10:42:53.865Z">
+<meta property="og:updated_time" content="2019-03-26T10:44:31.758Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="删除所有git commit">
 <meta name="twitter:description" content="记录一下，删除所有git commit的方法，但不改变原有代码的方式 123456789101112# 1. 将当前分支备份git checkout --orphan backup# 2. 添加文件到备份分支git add -A# 3. 提交git commit -am &quot;commit message&quot;# 4. 删除分支git branch -D master# 5. 把当前分支重命名为备份的分支">
@@ -339,7 +339,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  133
+                  140
                 </span>
               
 
@@ -378,7 +378,7 @@
       
         <p>记录一下，删除所有git commit的方法，但不改变原有代码的方式</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 将当前分支备份</span></span><br><span class="line">git checkout --orphan backup</span><br><span class="line"><span class="comment"># 2. 添加文件到备份分支</span></span><br><span class="line">git add -A</span><br><span class="line"><span class="comment"># 3. 提交</span></span><br><span class="line">git commit -am <span class="string">"commit message"</span></span><br><span class="line"><span class="comment"># 4. 删除分支</span></span><br><span class="line">git branch -D master</span><br><span class="line"><span class="comment"># 5. 把当前分支重命名为备份的分支</span></span><br><span class="line">git branch -m master</span><br><span class="line"><span class="comment"># 6. 强制更新代码到远程分支</span></span><br><span class="line">git push -f origin master</span><br></pre></td></tr></table></figure>
-<p><del>不要问我为什么会有这篇文章，说多了都是泪</del></p>
+<p><del>不要问我为什么会有这篇文章，说多了都是泪，我的历史提交啊。。。</del></p>
 
       
     </div>
@@ -412,6 +412,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/16/elasticsearch-cluster-err/" rel="prev" title="恢复绿油油的ES">
+                恢复绿油油的ES <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -485,7 +489,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
