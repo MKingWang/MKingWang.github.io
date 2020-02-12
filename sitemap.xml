@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.leixin.wang/2020/02/12/v2ray-tls-ws/</loc>
+    
+    <lastmod>2020-02-12T10:58:19.863Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.leixin.wang/2019/05/16/elasticsearch-cluster-err/</loc>
     
-    <lastmod>2019-05-20T08:16:39.108Z</lastmod>
+    <lastmod>2019-05-20T08:16:39.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.leixin.wang/2019/03/26/del-all-commits-for-git/</loc>
     
-    <lastmod>2019-03-26T10:44:31.758Z</lastmod>
+    <lastmod>2019-03-26T10:44:31.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.leixin.wang/2019/01/29/oneline-play-rasp/</loc>
     
-    <lastmod>2019-01-31T04:10:32.971Z</lastmod>
+    <lastmod>2019-01-31T04:10:32.000Z</lastmod>
     
   </url>
   
@@ -86,13 +93,6 @@
   </url>
   
   <url>
-    <loc>http://www.leixin.wang/categories/index.html</loc>
-    
-    <lastmod>2018-03-09T04:54:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.leixin.wang/2016/07/08/LVM/</loc>
     
     <lastmod>2018-03-09T04:54:32.000Z</lastmod>
@@ -115,6 +115,13 @@
   
   <url>
     <loc>http://www.leixin.wang/categories/index-1.html</loc>
+    
+    <lastmod>2018-03-09T04:54:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.leixin.wang/categories/index.html</loc>
     
     <lastmod>2018-03-09T04:54:32.000Z</lastmod>
     
