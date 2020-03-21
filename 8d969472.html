@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -82,16 +82,16 @@
 
 
 
-<meta name="description" content="OCI环境部署 将下面3个文件解压并拷贝到/usr/local目录下instantclient-basic-linux.x64-12.2.0.1.0.zipinstantclient-sdk-linux.x64-12.2.0.1.0.zipinstantclient-sqlplus-linux.x64-12.2.0.1.0.zip下载地址123456789101112131415161718192">
+<meta name="description" content="OCI环境部署 将下面3个文件解压并拷贝到/usr/local目录下instantclient-basic-linux.x64-12.2.0.1.0.zipinstantclient-sdk-linux.x64-12.2.0.1.0.zipinstantclient-sqlplus-linux.x64-12.2.0.1.0.zip下载地址  123456unzip -x instantclient">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux配置golang-OCI8开发环境">
 <meta property="og:url" content="http://www.leixin.wang/8d969472.html">
 <meta property="og:site_name" content="MKing&#39;s Blog">
-<meta property="og:description" content="OCI环境部署 将下面3个文件解压并拷贝到/usr/local目录下instantclient-basic-linux.x64-12.2.0.1.0.zipinstantclient-sdk-linux.x64-12.2.0.1.0.zipinstantclient-sqlplus-linux.x64-12.2.0.1.0.zip下载地址123456789101112131415161718192">
-<meta property="og:updated_time" content="2020-02-18T06:14:25.017Z">
+<meta property="og:description" content="OCI环境部署 将下面3个文件解压并拷贝到/usr/local目录下instantclient-basic-linux.x64-12.2.0.1.0.zipinstantclient-sdk-linux.x64-12.2.0.1.0.zipinstantclient-sqlplus-linux.x64-12.2.0.1.0.zip下载地址  123456unzip -x instantclient">
+<meta property="og:updated_time" content="2020-03-21T07:14:37.461Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux配置golang-OCI8开发环境">
-<meta name="twitter:description" content="OCI环境部署 将下面3个文件解压并拷贝到/usr/local目录下instantclient-basic-linux.x64-12.2.0.1.0.zipinstantclient-sdk-linux.x64-12.2.0.1.0.zipinstantclient-sqlplus-linux.x64-12.2.0.1.0.zip下载地址123456789101112131415161718192">
+<meta name="twitter:description" content="OCI环境部署 将下面3个文件解压并拷贝到/usr/local目录下instantclient-basic-linux.x64-12.2.0.1.0.zipinstantclient-sdk-linux.x64-12.2.0.1.0.zipinstantclient-sqlplus-linux.x64-12.2.0.1.0.zip下载地址  123456unzip -x instantclient">
 
 
 
@@ -99,7 +99,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
@@ -162,7 +162,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <h1 class="site-subtitle" itemprop="description"></h1>
       
   </div>
 
@@ -295,7 +295,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux配置golang-OCI8开发环境</h1>
+          <h2 class="post-title" itemprop="name headline">Linux配置golang-OCI8开发环境</h2>
         
 
         <div class="post-meta">
@@ -361,7 +361,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  262
+                  258
                 </span>
               
 
@@ -399,14 +399,18 @@
 
       
         <h3 id="OCI环境部署"><a href="#OCI环境部署" class="headerlink" title="OCI环境部署"></a>OCI环境部署</h3><ul>
-<li>将下面3个文件解压并拷贝到<code>/usr/local</code>目录下<br><code>instantclient-basic-linux.x64-12.2.0.1.0.zip</code><br><code>instantclient-sdk-linux.x64-12.2.0.1.0.zip</code><br><code>instantclient-sqlplus-linux.x64-12.2.0.1.0.zip</code><br><a href="https://pan.baidu.com/s/1ggKEksN" target="_blank" rel="noopener">下载地址</a><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">unzip -x instantclient-basic-linux.x64-12.2.0.1.0.zip</span><br><span class="line">unzip -x instantclient-sdk-linux.x64-12.2.0.1.0.zip</span><br><span class="line">unzip -x instantclient-sqlplus-linux.x64-12.2.0.1.0.zip</span><br><span class="line">cp instantclient_12_2 /usr/<span class="built_in">local</span>/instantclient</span><br><span class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/instantclient</span><br><span class="line">ln -s libclntsh.so.12.1 libclntsh.so</span><br><span class="line">```    </span><br><span class="line">- 添加oci的配置</span><br><span class="line">```bash</span><br><span class="line">vim /usr/lib/pkgconfig/oci8.pc</span><br><span class="line"><span class="comment"># 内容如下</span></span><br><span class="line">prefix=/usr/<span class="built_in">local</span>/instantclient</span><br><span class="line">exec_prefix=<span class="variable">$&#123;prefix&#125;</span></span><br><span class="line">libdir=<span class="variable">$&#123;prefix&#125;</span></span><br><span class="line">includedir=<span class="variable">$&#123;prefix&#125;</span>/sdk/include</span><br><span class="line">glib_genmarshal=glib-genmarshal</span><br><span class="line">gobject_query=gobject-query</span><br><span class="line">glib_mkenums=glib-mkenums</span><br><span class="line">Name: oci8</span><br><span class="line">Description: oci8 library</span><br><span class="line">Libs: -L<span class="variable">$&#123;libdir&#125;</span> -lclntsh</span><br><span class="line">Cflags: -I<span class="variable">$&#123;includedir&#125;</span></span><br><span class="line">Version: 12.2</span><br><span class="line"><span class="comment"># 再将环境变量写入profile</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">'export PKG_CONFIG_PATH=/user/lib/pkgconfig'</span> &gt;&gt;/etc/profile</span><br></pre></td></tr></table></figure>
-</li>
+<li>将下面3个文件解压并拷贝到<code>/usr/local</code>目录下<br><code>instantclient-basic-linux.x64-12.2.0.1.0.zip</code><br><code>instantclient-sdk-linux.x64-12.2.0.1.0.zip</code><br><code>instantclient-sqlplus-linux.x64-12.2.0.1.0.zip</code><br><a href="https://pan.baidu.com/s/1ggKEksN" target="_blank" rel="noopener">下载地址</a></li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">unzip -x instantclient-basic-linux.x64-12.2.0.1.0.zip</span><br><span class="line">unzip -x instantclient-sdk-linux.x64-12.2.0.1.0.zip</span><br><span class="line">unzip -x instantclient-sqlplus-linux.x64-12.2.0.1.0.zip</span><br><span class="line">cp instantclient_12_2 /usr/<span class="built_in">local</span>/instantclient</span><br><span class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/instantclient</span><br><span class="line">ln -s libclntsh.so.12.1 libclntsh.so</span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加oci的配置</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/lib/pkgconfig/oci8.pc</span><br><span class="line"><span class="comment"># 内容如下</span></span><br><span class="line">prefix=/usr/<span class="built_in">local</span>/instantclient</span><br><span class="line">exec_prefix=<span class="variable">$&#123;prefix&#125;</span></span><br><span class="line">libdir=<span class="variable">$&#123;prefix&#125;</span></span><br><span class="line">includedir=<span class="variable">$&#123;prefix&#125;</span>/sdk/include</span><br><span class="line">glib_genmarshal=glib-genmarshal</span><br><span class="line">gobject_query=gobject-query</span><br><span class="line">glib_mkenums=glib-mkenums</span><br><span class="line">Name: oci8</span><br><span class="line">Description: oci8 library</span><br><span class="line">Libs: -L<span class="variable">$&#123;libdir&#125;</span> -lclntsh</span><br><span class="line">Cflags: -I<span class="variable">$&#123;includedir&#125;</span></span><br><span class="line">Version: 12.2</span><br><span class="line"><span class="comment"># 再将环境变量写入profile</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">'export PKG_CONFIG_PATH=/user/lib/pkgconfig'</span> &gt;&gt;/etc/profile</span><br></pre></td></tr></table></figure>
 <p>测试oci安装成功<br><code>pkg-config --list-all | grep oci8</code></p>
 <ul>
-<li>配置客户端环境变量<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"><span class="comment"># 内容如下</span></span><br><span class="line"><span class="built_in">export</span> ora_home=/usr/<span class="built_in">local</span>/instantclient</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$ora_home</span></span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$ora_home</span></span><br></pre></td></tr></table></figure>
-</li>
+<li>配置客户端环境变量</li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"><span class="comment"># 内容如下</span></span><br><span class="line"><span class="built_in">export</span> ora_home=/usr/<span class="built_in">local</span>/instantclient</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$ora_home</span></span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$ora_home</span></span><br></pre></td></tr></table></figure>
 <h3 id="安装go-oci8包"><a href="#安装go-oci8包" class="headerlink" title="安装go-oci8包"></a>安装go-oci8包</h3><p><code>go get github.com/mattn/go-oci8</code></p>
 
       
@@ -535,7 +539,7 @@
                 alt="MKing" />
             
               <p class="site-author-name" itemprop="name">MKing</p>
-              <p class="site-description motion-element" itemprop="description">君子欲讷于言而敏于行</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -574,6 +578,24 @@
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情连接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://kevinblack.github.io/" title="Kevin的博客" target="_blank">Kevin的博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.andylouse.net/" title="智林心语" target="_blank">智林心语</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -630,7 +652,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 -->
 
 
@@ -732,6 +754,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
