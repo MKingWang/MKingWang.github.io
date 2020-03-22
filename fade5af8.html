@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,6 +16,13 @@
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-fill-left.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -82,16 +89,17 @@
 
 
 
-<meta name="description" content="事情是这样的：公司需要我搭一台vsftp服务器用来pdf文件用户程序的处理和存档。但是上传方上传上来的是GBK编码，而linux下使用UTF8编码，已经运行了几年的服务器更改系统编码已是不可能，于是想到对VSFTP进行更改。经过不断的google+baidu，发现vsftp并不能实现中文名转码的功能，于是自己写一个小脚本,使用到inotifywait和convmv。 inotify是一个很好的文件">
+<meta name="description" content="[TOC]事情是这样的：公司需要我搭一台vsftp服务器用来pdf文件用户程序的处理和存档。但是上传方上传上来的是GBK编码，而linux下使用UTF8编码，已经运行了几年的服务器更改系统编码已是不可能，于是想到对VSFTP进行更改。经过不断的google+baidu，发现vsftp并不能实现中文名转码的功能，于是自己写一个小脚本,使用到inotifywait和convmv。 inotify是一个">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VSFTP实时文件名转码脚本">
 <meta property="og:url" content="http://www.leixin.wang/fade5af8.html">
 <meta property="og:site_name" content="MKing&#39;s Blog">
-<meta property="og:description" content="事情是这样的：公司需要我搭一台vsftp服务器用来pdf文件用户程序的处理和存档。但是上传方上传上来的是GBK编码，而linux下使用UTF8编码，已经运行了几年的服务器更改系统编码已是不可能，于是想到对VSFTP进行更改。经过不断的google+baidu，发现vsftp并不能实现中文名转码的功能，于是自己写一个小脚本,使用到inotifywait和convmv。 inotify是一个很好的文件">
-<meta property="og:updated_time" content="2020-02-18T06:14:25.016Z">
+<meta property="og:description" content="[TOC]事情是这样的：公司需要我搭一台vsftp服务器用来pdf文件用户程序的处理和存档。但是上传方上传上来的是GBK编码，而linux下使用UTF8编码，已经运行了几年的服务器更改系统编码已是不可能，于是想到对VSFTP进行更改。经过不断的google+baidu，发现vsftp并不能实现中文名转码的功能，于是自己写一个小脚本,使用到inotifywait和convmv。 inotify是一个">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-03-22T13:59:40.803Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VSFTP实时文件名转码脚本">
-<meta name="twitter:description" content="事情是这样的：公司需要我搭一台vsftp服务器用来pdf文件用户程序的处理和存档。但是上传方上传上来的是GBK编码，而linux下使用UTF8编码，已经运行了几年的服务器更改系统编码已是不可能，于是想到对VSFTP进行更改。经过不断的google+baidu，发现vsftp并不能实现中文名转码的功能，于是自己写一个小脚本,使用到inotifywait和convmv。 inotify是一个很好的文件">
+<meta name="twitter:description" content="[TOC]事情是这样的：公司需要我搭一台vsftp服务器用来pdf文件用户程序的处理和存档。但是上传方上传上来的是GBK编码，而linux下使用UTF8编码，已经运行了几年的服务器更改系统编码已是不可能，于是想到对VSFTP进行更改。经过不断的google+baidu，发现vsftp并不能实现中文名转码的功能，于是自己写一个小脚本,使用到inotifywait和convmv。 inotify是一个">
 
 
 
@@ -101,7 +109,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -139,14 +147,14 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -343,9 +351,30 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/fade5af8.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/fade5af8.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
+          
+             <span id="/fade5af8.html" class="leancloud_visitors" data-flag-title="VSFTP实时文件名转码脚本">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -361,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  393
+                  394
                 </span>
               
 
@@ -398,7 +427,7 @@
       
 
       
-        <p>事情是这样的：公司需要我搭一台vsftp服务器用来pdf文件用户程序的处理和存档。但是上传方上传上来的是GBK编码，而linux下使用UTF8编码，已经运行了几年的服务器更改系统编码已是不可能，于是想到对VSFTP进行更改。经过不断的google+baidu，发现vsftp并不能实现中文名转码的功能，于是自己写一个小脚本,使用到inotifywait和convmv。</p>
+        <p>[TOC]<br>事情是这样的：公司需要我搭一台vsftp服务器用来pdf文件用户程序的处理和存档。但是上传方上传上来的是GBK编码，而linux下使用UTF8编码，已经运行了几年的服务器更改系统编码已是不可能，于是想到对VSFTP进行更改。经过不断的google+baidu，发现vsftp并不能实现中文名转码的功能，于是自己写一个小脚本,使用到inotifywait和convmv。</p>
 <p>inotify是一个很好的文件系统实时监控工具，用的地方很多。于是想到监控FTP目录下文件的CLOSE状态，确保文件被写完之后再进行文件名跟改，防止在更改的时候FTP继续写文件出错。<br>转码用convmv工具，进行编码转换。convmv默认以测试方式运行，不会对真实文件进行文件名替换，<code>--notest</code> 参数用于解除test模式，<code>-f</code>指定源编码模式，<code>-t</code>指定目标编码模式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">ftpDir=/data/ftp/</span><br><span class="line"></span><br><span class="line"><span class="comment">#首次启动对FTP目录进行编码转换，防止脚本意外终止导致编码没有转换的问题</span></span><br><span class="line">find <span class="variable">$ftpDir</span> -<span class="built_in">type</span> f -name *.pdf | xargs convmv -f GBK -t UTF-8 --notest</span><br><span class="line"></span><br><span class="line"><span class="comment">#监听FTP目录，遇到CLOSE状态的文件进行编码转换，忽略目录</span></span><br><span class="line">inotifywait -rmq -e close <span class="variable">$ftpDir</span> | <span class="keyword">while</span> <span class="built_in">read</span> line</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">        k=`<span class="built_in">echo</span> <span class="variable">$line</span> | grep -v ISDIR`</span><br><span class="line">        <span class="keyword">if</span> [ -z <span class="string">"<span class="variable">$k</span>"</span> ]</span><br><span class="line">        <span class="keyword">then</span></span><br><span class="line">                <span class="built_in">continue</span></span><br><span class="line">        <span class="keyword">fi</span></span><br><span class="line">        ftpFile=`<span class="built_in">echo</span> <span class="variable">$line</span> | awk <span class="string">'&#123;print $1$3&#125;'</span>`</span><br><span class="line">        convmv -f GBK -t UTF-8 --notest <span class="variable">$ftpFile</span> &amp;gt;&amp;gt; /var/<span class="built_in">log</span>/convmv.log</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></p>
 
       
@@ -484,6 +513,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -552,6 +584,16 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:wlx@leixin.wang" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -571,6 +613,10 @@
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://www.andylouse.net/" title="智林心语" target="_blank">智林心语</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.ioi.one/" title="一个不务正业的安全博主" target="_blank">一个不务正业的安全博主</a>
                   </li>
                 
               </ul>
@@ -768,6 +814,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'h4nVFogHFEEophXBEWgV8EGw-MdYXbMMI',
+        appKey: 'hCc12GXoniSAC5qbzJnDPXbj',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1095,6 +1163,113 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("h4nVFogHFEEophXBEWgV8EGw-MdYXbMMI", "hCc12GXoniSAC5qbzJnDPXbj");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
