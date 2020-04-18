@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="linux,docker,kvm," />
 
 
 
@@ -89,16 +89,18 @@
 
 
 
-<meta name="description" content="君子欲讷于言而敏于行">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MKing&#39;s Blog">
-<meta property="og:url" content="http://www.leixin.wang/archives/2019/03/index.html">
+<meta name="description" content="在一台kvm宿主机上安装了docker以后发现kvm的虚拟机无法获取到ip，配置静态ip网络也无法正常工作，但是宿主机的网络却很正，排查到libvirtd有如下报错1234Apr 18 13:12:05 workspace libvirtd[721]: Failed to open file &amp;apos;/sys/class/net/vethaf21808/operstate&amp;apos;: No">
+<meta name="keywords" content="linux,docker,kvm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决docker和kvm网络冲突的问题">
+<meta property="og:url" content="http://www.leixin.wang/611c78a3.html">
 <meta property="og:site_name" content="MKing&#39;s Blog">
-<meta property="og:description" content="君子欲讷于言而敏于行">
+<meta property="og:description" content="在一台kvm宿主机上安装了docker以后发现kvm的虚拟机无法获取到ip，配置静态ip网络也无法正常工作，但是宿主机的网络却很正，排查到libvirtd有如下报错1234Apr 18 13:12:05 workspace libvirtd[721]: Failed to open file &amp;apos;/sys/class/net/vethaf21808/operstate&amp;apos;: No">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-04-18T06:37:56.873Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MKing&#39;s Blog">
-<meta name="twitter:description" content="君子欲讷于言而敏于行">
+<meta name="twitter:title" content="解决docker和kvm网络冲突的问题">
+<meta name="twitter:description" content="在一台kvm宿主机上安装了docker以后发现kvm的虚拟机无法获取到ip，配置静态ip网络也无法正常工作，但是宿主机的网络却很正，排查到libvirtd有如下报错1234Apr 18 13:12:05 workspace libvirtd[721]: Failed to open file &amp;apos;/sys/class/net/vethaf21808/operstate&amp;apos;: No">
 
 
 
@@ -128,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://www.leixin.wang/archives/2019/03/"/>
+  <link rel="canonical" href="http://www.leixin.wang/611c78a3.html"/>
 
 
 
 
 
-  <title>归档 | MKing's Blog</title>
+  <title>解决docker和kvm网络冲突的问题 | MKing's Blog</title>
   
 
 
@@ -153,7 +155,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -271,74 +273,235 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 19 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2019">2019</h2>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.leixin.wang/611c78a3.html">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MKing">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MKing's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/50675bd.html" itemprop="url">
-              
-                <span itemprop="name">删除所有git commit</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">解决docker和kvm网络冲突的问题</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-26T18:35:26+08:00"
-              content="2019-03-26" >
-          03-26
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-18T00:00:00+08:00">
+                2020-04-18
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/611c78a3.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/611c78a3.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  301
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>在一台kvm宿主机上安装了docker以后发现kvm的虚拟机无法获取到ip，配置静态ip网络也无法正常工作，但是宿主机的网络却很正，排查到<code>libvirtd</code>有如下报错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Apr 18 13:12:05 workspace libvirtd[721]: Failed to open file &apos;/sys/class/net/vethaf21808/operstate&apos;: No such file or directory</span><br><span class="line">Apr 18 13:12:05 workspace libvirtd[721]: unable to read: /sys/class/net/vethaf21808/operstate: No such file or directory</span><br><span class="line">Apr 18 13:37:01 workspace libvirtd[721]: internal error: End of file from qemu monitor</span><br><span class="line">Apr 18 13:37:25 workspace libvirtd[721]: internal error: End of file from qemu monitor</span><br></pre></td></tr></table></figure></p>
+<p>排查了一通没有更详细的消息，猜测是docker网桥导致的问题。于是查询到资料将docker网桥绑定到<code>br0</code>上面问题解决。操作如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim /etc/docker/daemon.json</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">"bridge"</span>: <span class="string">"br0"</span>,</span><br><span class="line">  <span class="string">"default-gateway"</span>: <span class="string">"172.16.80.1"</span> <span class="comment">#此处ip地址为宿主机的真实网关</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>PS：<br>故障原因是<code>docker server</code>在启动的时候会创建docker网桥<code>docker0</code>，用于提供docker内部的网络通信以及容器和docker外界的通信。默认<code>docker0</code>会绑定物理网卡如<code>enp0xxx</code>、<code>eth0</code>。而<code>br0</code>也绑定了物理网卡，<code>docker0</code>将物理网卡抢占，导致kvm使用<code>br0</code>无法正常获取网络。</p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    MKing
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://www.leixin.wang/611c78a3.html" title="解决docker和kvm网络冲突的问题">http://www.leixin.wang/611c78a3.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux-docker-kvm/" rel="tag"># linux,docker,kvm</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/133ac8a5.html" rel="next" title="配置v2ray+nginx+ws访问国际网络">
+                <i class="fa fa-chevron-left"></i> 配置v2ray+nginx+ws访问国际网络
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -346,6 +509,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -629,6 +799,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
